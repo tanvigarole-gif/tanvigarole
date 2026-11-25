@@ -1,0 +1,7 @@
+i = int(input("Integer: "))
+f = float(input("Float: "))
+s = input("String: ")
+b = input("Boolean (True/False): ") == "True"
+print(f"{'Value':<12}{'Type'}")
+for v in (i, f, s, b):
+print(f"{str(v):<12}{type(v).__name__}"
