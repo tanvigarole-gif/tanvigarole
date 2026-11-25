@@ -1,0 +1,12 @@
+a = 10
+b = 10
+print(id(a), id(b))     
+b = 20
+print(id(a), id(b))     
+l1 = [1, 2]
+l2 = l1
+l2.append(3)
+print(l1)               
+# same id (small ints are reused)
+# different now; a is unchanged
+# [1, 2, 3]  (list is mutable, both names share it)
