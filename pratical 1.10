@@ -1,0 +1,9 @@
+age, marks = 19, 45
+is_adult = age > 18
+is_pass = marks > 50
+if is_adult and is_pass:
+print("Adult and passed")
+elif is_adult:
+print("Adult but failed")
+else:
+print("Minor")
