@@ -1,0 +1,11 @@
+# print(10 / 0)      
+# print("5" + 3)      
+# ZeroDivisionError
+# TypeError
+a = int(input("a: "))
+b = int(input("b: "))
+if b != 0:
+print(a / b)
+else:
+print("Cannot divide by zero")
+print(int("5") + 3)   # fixed string + number
