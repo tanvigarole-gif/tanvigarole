@@ -1,0 +1,8 @@
+km = float(input("Kilometers: "))
+print(km * 1000, "m")
+c = float(input("Celsius: "))
+print(f"{c * 9 / 5 + 32:.1f} F")
+RATE = 83                      
+# fixed rate: Rs per 1 USD
+rs = float(input("Rupees: "))
+print(f"{rs / RATE:.2f} USD")
