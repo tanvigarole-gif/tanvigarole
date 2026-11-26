@@ -1,0 +1,10 @@
+m1 = float(input("Marks 1: "))
+m2 = float(input("Marks 2: "))
+m3 = float(input("Marks 3: "))
+total = m1 + m2 + m3
+perc = total / 3
+if perc >= 75: grade = "A"
+elif perc >= 60: grade = "B"
+elif perc >= 50: grade = "C"
+else: grade = "Fail"
+print(f"Total = {total}, Percentage = {perc:.2f}%, Grade = {grade}")
