@@ -1,0 +1,17 @@
+def convert(v):
+try:
+return int(v)
+except ValueError:
+try:
+return float(v)
+except ValueError:
+return v
+x = convert(input("First: "))
+y = convert(input("Second: "))
+if isinstance(x, (int, float)) and isinstance(y, (int, float)):
+print("Sum =", x + y)
+elif isinstance(x, str) and isinstance(y, str):
+print("Joined =", x + y)
+else:
+print("Invalid: cannot combine", type(x).__name__, "and",
+type(y).__name__)
